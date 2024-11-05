@@ -78,3 +78,67 @@ Data Exploration Regarding House Price vs. Bedroom Count
 --Five Bedrooms: 403
 -The number of one-bedroom houses observed was slightly higher than all the others, and the number of two-bedroom houses observed was lower than all the rest of the bedroom count houses. Being that the number of two-bedroom houses observed was lower than all the others and still had an average price that was higher than almost all the bedroom count houses observed, it is still not enough to conclude a correlation between bedroom count and house price. 
 
+#### 1. **Initial Data Exploration**
+- The dataset contains **2,000 records** of house prices, with features such as **Number of Bedrooms**, **Number of bathrooms**, **Square Footage**, **location**, **condition**, **garage presence**, and **year built**.
+- Data inspection revealed that there are no missing values in the dataset, particularly in the **'Bathroom'** column, which indicates that every house in the dataset specifies whether it has a garage or not.
+
+#### 2. **Distribution of Houses Based on Bathroom Count**
+- The **distribution of houses based on bathroom count:** There are **461** houses with **1 bathroom**, **494** houses with **2 bathrooms**, **524** houses with **3 bathrooms**, **521** houses with **4 bathrooms**,
+- A pie chart was used to display the proportion of houses based on bathroom count. The visualization indicates that the difference is relatively small, showing nearly an even split.
+
+#### 3. **Impact of Bathroom Count on House Prices**
+- The average house prices **based on bathroom counts** were compared using summary statistics and visualizations:
+  - Houses with 1 bathroom tend to have a slightly higher average price compared to rest.
+  - A bar chart depicting the **average house price** based on bathroom count confirmed this observation.
+  - The one-way ANOVA test for garage presence showed that the **p-value** was **0.13**, suggesting that the difference in average prices is not statistically significant at the 95% confidence level. Therefore, having more bathrooms may not have a strong effect on house prices in this dataset.
+
+#### 4. **Distribution of House Prices based on bathroom count**
+- A **histogram** comparing the distribution of house prices for houses with 1, 2,3 and 4 bathrooms shows that the distributions are similar, with house prices spread across all price ranges.
+
+#### 5. **Average House Price Over Time: Based on bathroom count**
+- A **line plot** was used to examine how average house prices have changed over time (based on the year built) for houses with 1, 2, 3 and 4 bathrooms.
+  - The plot shows that average prices fluctuate significantly over the years for each category, with no clear or consistent trend of one category having consistently higher prices than the other.
+
+#### 6. **Outliers in House Prices**
+- Outliers in house prices were identified using the **Interquartile Range (IQR)** method:
+  - There were **no outliers detected based on bathroom count**.
+
+#### 7. **Correlation between Bathroom Count and House Prices**
+- A scatter plot was created to explore the relationship between **bathroom count** and **house prices**.
+  - A linear regression line was added to the scatter plot, almost showing a **horizontal line**, which corresponds to a **correlation coefficient of -0.02**.
+  - This indicates that there is **no correlation** between garage presence and house prices.
+  - The **p-value** was **0.13**, meaning that the result is not statistically significant.
+
+#### 8. **Analysis by Location**
+- The dataset was further analyzed to understand the impact of **location** on house prices:
+  - The distribution of houses by location (**Downtown, Rural, Suburban, and Urban**) was visualized using a bar chart that included bathroom counts.
+  - In terms of bathroom counts across locations, the percentage distribution showed no significant difference between locations regarding the bathroom count.
+
+#### 9. **Overall Observations**
+- The analysis indicates that **bathroom count** has a weak influence on house prices, as evidenced by the **slightly higher average prices** for houses with 1 bathroom, though not statistically significant.
+- This dataset does not reveal any major factors that lead to statistically significant variations in house prices, suggesting that other variables (e.g., house condition, area, or year built) might play a more substantial role in determining house prices.
+
+### Conclusion
+The analysis of this dataset suggests that **bathroom count** does not have a significant influence on house prices, based on statistical tests and visualizations.
+
+Exploratory Analysis of House Prices
+1. Initial Data Exploration
+•	The dataset contains 2,000 records of house prices, with features such as Number of Bedrooms, Number of bathrooms, Square Footage, location, condition, garage presence, and year built.
+•	Data inspection revealed that there are no missing values in the dataset, which indicates that every house in the dataset specifies its location
+2. Distribution of Houses According to there locations
+     From calculating the count of each location in the dataset it was evident a greater number of the population lived in the downtown areas followed by urban, suburban and rural areas in that order
+. a pie chart was used to give a pictorial representation of the distribution
+3. Impact of location  on House Prices
+.By calculating the mean price of each location it was observed  that the most expensive houses were in the suburban areas then Rural ,downtown and the least expensive in urban areas with a slight difference in price between all four groups
+A bar chart was used to compare the means of the average prices
+	The one-way ANOVA test for Locations showed that the p-value was 0.1943221,this shows that the difference between the prices has no statistically significance
+4. Average House Price Over Time
+	A line plot was used to show  that average prices fluctuate significantly over the years for all areas, with no clear or consistent trend of one category having consistently higher prices than the other. However, there may be some differences in the rate of increase or specific price ranges between the early period (1900-1921) and the later period (2000-2021).
+ 6. Outliers in House Prices
+•	Outliers in house prices were identified using the Interquartile Range (IQR) method:
+	There were no outliers detected for all locatins
+ 9. Overall Observations
+•	The analysis indicates that Location has a weak influence on house prices, as evidenced by comparing the average prices for all locations
+•	This dataset does not reveal any major factors that lead to statistically significant variations in house prices, suggesting that other variables might play a more substantial role in determining house prices.
+Conclusion
+ 	From the analysis location has no or a minimal effect on the price of houses in this dataset with zero outliers and  a p value of 0.19432 proves that any price different from the mean prices has no statistical correlation with the location .
