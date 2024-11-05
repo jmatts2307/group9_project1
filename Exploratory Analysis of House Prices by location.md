@@ -14,3 +14,8 @@ A bar chart was used to compare the means of the average prices
  6. Outliers in House Prices
 •	Outliers in house prices were identified using the Interquartile Range (IQR) method:
 	There were no outliers detected for all locatins
+ 9. Overall Observations
+•	The analysis indicates that Location has a weak influence on house prices, as evidenced by comparing the average prices for all locations
+•	This dataset does not reveal any major factors that lead to statistically significant variations in house prices, suggesting that other variables might play a more substantial role in determining house prices.
+Conclusion
+ 	From the analysis location has no or a minimal effect on the price of houses in this dataset with zero outliers and  a p value of 0.19432 proves that any price different from the mean prices has no statistical correlation with the location .
